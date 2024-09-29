@@ -1,0 +1,25 @@
+.container {
+    /*borda feita para entender o dimensionamento de espaços*/
+    border: blue solid .2em;
+
+    display: flex;
+}
+.menu {
+    /*borda feita para entender o dimensionamento de espaços*/
+    border: red solid .2em;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 90px;
+    width: 100%;
+    background-color:#000000;
+    color: #ff0000;
+}
+.menu h2 ~ h2 {
+    color: #ffffff;
+}
+.menu-lives {
+    color: #ffffff;
+}
+
