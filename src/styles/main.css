@@ -1,25 +1,63 @@
 .container {
     /*borda feita para entender o dimensionamento de espaços*/
-    border: blue solid .2em;
+    /* border: blue solid .3rem; */
 
     display: flex;
+    flex-direction:column;
+    height: 100vh;
+    background-image: url('../images/wall.png')
 }
 .menu {
     /*borda feita para entender o dimensionamento de espaços*/
-    border: red solid .2em;
+    /* border: red solid .3rem; */
 
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    height: 90px;
+    height: 5.5rem;
     width: 100%;
     background-color:#000000;
     color: #ff0000;
+    border-bottom: #d3d33e solid .3rem;
 }
-.menu h2 ~ h2 {
+/*Ajuste dos valores mostrados em Timte Left e Your Score no menu*/
+.menu h2:nth-child(2) {
+    /*borda feita para entender o dimensionamento de espaços*/
+    /* border: white solid .1rem; */
+   
     color: #ffffff;
+    margin-top: .5rem;
+
 }
 .menu-lives {
+    /*borda feita para entender o dimensionamento de espaços*/
+    /* border: white solid .3rem; */
+    
     color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+.menu-lives img {
+    height: 3.5rem;
+}
+.panel {
+        /*borda feita para entender o dimensionamento de espaços*/
+        /* border: green solid .3rem; */
 
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.square {
+    border: #000000 solid .1rem;
+
+    width: 9rem;
+    height: 9rem;
+    background-color: #33ffee;
+}
+.enemy {
+    background-image: url('../images/ralph.png');
+    background-size: cover;
+}
