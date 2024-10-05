@@ -51,17 +51,17 @@ function randomSquare() {
 }
 // função que identifica clique do mouse para pontuar se o jogador acertou para atualizar o socre
 function addListenerHitbox() {
-    state.view.lives.textContent = state.values.startLives;
+    state.view.lives.textContent = `x${state.values.startLives}`;
     state.view.squares.forEach((square) => {
         square.addEventListener("mousedown", ()=>{
             if(square.id === state.values.hitPosition) {
                 playAudio('hit');
                 state.values.result++;
-                state.view.score.textContent = state.values.result;
+                state.view.score.textContent = `x${state.values.result}`;
                 state.values.hitPosition = null;
             } else if(square.id != state.values.hitPosition) {
                 state.values.startLives--;
-                state.view.lives.textContent = state.values.startLives;
+                state.view.lives.textContent = `x${state.values.startLives}`;
                 if (state.values.startLives === 0) {
                     clearInterval(state.actions.countDownTimerId);
                     clearInterval(state.actions.timeId);
