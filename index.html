@@ -14,39 +14,63 @@
     <title>Detona Ralph</title>
 </head>
 <body>
-    <div class="container">
+    <header>
         <div class="menu">
             <div class="menu-time">
                 <h2>Time left</h2>
-                <h2 id="time-left">0</h2>
+                <h2 class="game-stats" id="time-left">0</h2>
             </div>
             <div class="menu-score">
                 <h2>Your Score</h2>
-                <h2 id="score">0</h2>
+                <h2 class="game-stats" id="score">0</h2>
             </div>
             <div class="menu-lives">
                 <img src="./src/images/player.png" alt="foto do jogador">
-                <h2 id="lives"></h2>
+                <h2 class="game-stats" id="lives"></h2>
             </div>
         </div>
-        <div class="panel">
-            <div class="panel-row">
-                <div class="square" id="1"></div>            
-                <div class="square" id="2"></div>            
-                <div class="square" id="3"></div>            
+    </header>
+    <main>
+        <div class="container">
+            <div class="panel">
+                <div class="panel-row">
+                    <div class="square" id="1"></div>            
+                    <div class="square" id="2"></div>            
+                    <div class="square" id="3"></div>            
+                </div>
+                <div class="panel-row">
+                    <div class="square" id="4"></div>            
+                    <div class="square" id="5"></div>            
+                    <div class="square" id="6"></div>            
+                </div>
+                <div class="panel-row">
+                    <div class="square" id="7"></div>            
+                    <div class="square" id="8"></div>            
+                    <div class="square" id="9"></div>            
+                </div>
             </div>
-            <div class="panel-row">
-                <div class="square" id="4"></div>            
-                <div class="square" id="5"></div>            
-                <div class="square" id="6"></div>            
+            <div class="menu-buttons">
+                <button class="btn" id="btn-play">Play</button>
+                <button class="btn" id="btn-pause">Pause</button>
             </div>
-            <div class="panel-row">
-                <div class="square" id="7"></div>            
-                <div class="square" id="8"></div>            
-                <div class="square" id="9"></div>            
+            <div class="ranking">
+                <div class="rank" id="rank-01">1</div>
+                <div class="rank" id="rank-nick-01"></div>
+                <div class="rank" id="rank-points-01"></div>
+                <div class="rank" id="rank-02">2</div>
+                <div class="rank" id="rank-nick-02"></div>
+                <div class="rank" id="rank-points-02"></div>
+                <div class="rank" id="rank-03">3</div>
+                <div class="rank" id="rank-nick-03"></div>
+                <div class="rank" id="rank-points-03"></div>
             </div>
         </div>
-    </div>
+    </main>
+    <footer>
+        <div>
+            <p>Game Detona Ralph</p>
+        </div>
+    </footer>
     <script defer src="./src/scripts/engine.js"></script>
 </body>
 </html>
