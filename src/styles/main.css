@@ -1,63 +1,95 @@
-.container {
-    /*borda feita para entender o dimensionamento de espaços*/
-    /* border: blue solid .3rem; */
-
-    display: flex;
-    flex-direction:column;
-    height: 100vh;
-    background-image: url('../images/wall.png')
-}
+/*div do header contendo os elementos que mostram as estatisticas do game*/
 .menu {
-    /*borda feita para entender o dimensionamento de espaços*/
-    /* border: red solid .3rem; */
-
     display: flex;
-    justify-content: space-evenly;
+    justify-content:space-evenly;
     align-items: center;
-    height: 5.5rem;
+    height: 6rem;
     width: 100%;
     background-color:#000000;
     color: #ff0000;
     border-bottom: #d3d33e solid .3rem;
 }
-/*Ajuste dos valores mostrados em Timte Left e Your Score no menu*/
-.menu h2:nth-child(2) {
-    /*borda feita para entender o dimensionamento de espaços*/
-    /* border: white solid .1rem; */
-   
+/*afeta os digitos das estatisticas no header da página*/
+.game-stats {
     color: #ffffff;
     margin-top: .5rem;
-
 }
 .menu-lives {
-    /*borda feita para entender o dimensionamento de espaços*/
-    /* border: white solid .3rem; */
-    
-    color: #ffffff;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 0.5rem;
 }
+/*imagem que representa as vidas*/
 .menu-lives img {
     height: 3.5rem;
 }
-.panel {
-        /*borda feita para entender o dimensionamento de espaços*/
-        /* border: green solid .3rem; */
-
-    margin-top: 1rem;
+.menu-time {
+    padding: 0.5rem;
+}
+/*Container que ocupa a tag main da página*/
+.container {
     display: flex;
-    justify-content: center;
+    flex-direction:column;
     align-items: center;
+    height: 51rem;
+    background-image: url('../images/wall.png')
+}
+.panel {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-top:1rem;
+    flex-wrap: nowrap;
+}
+.square-row {
+    display: flex;
 }
 .square {
+    display: flex;
     border: #000000 solid .1rem;
-
-    width: 9rem;
-    height: 9rem;
+    width: 8rem;
+    height: 8rem;
     background-color: #33ffee;
 }
 .enemy {
     background-image: url('../images/ralph.png');
     background-size: cover;
+}
+.menu-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+.button {
+    width: 6rem;
+    height: 1.5rem;
+    border-radius: 40% 0% 40% 0%;
+    color: #ffffff;
+    background-color: #3687f6;
+    border: #444444 solid .1.5rem;
+    box-shadow: .4rem .4rem .4rem #000000;
+}
+.ranking {
+    display: grid;
+    grid-template-columns: .5fr 2fr 1fr;
+    width: 24em;
+    height: auto;
+    margin-top:2rem;
+    border:#000000 .3rem solid
+}
+.rank {
+    background-color: white;
+    border:#ff0000 1px solid;
+    color:green
+}
+footer {
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    padding: .3rem;
+    background-color: #69695fe5;
+    height: 2rem;
 }
